@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О проекте — Telegram-бот расписания</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">ПД · <span>Расписание</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html" class="active">О проекте</a></li>
+          <li><a href="team.html">Участники</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">О проекте</h1>
+
+    <p>
+      Проект разработан в рамках дисциплины «Проектная деятельность» для студентов
+      Московского политеха. Целевая аудитория — учащиеся, которым нужно быстро
+      узнать расписание и получить напоминание перед парой.
+    </p>
+
+    <h2>Функциональность</h2>
+    <ul>
+      <li>Выбор учебной группы (например, 253-331)</li>
+      <li>Расписание: сегодня, завтра, неделя</li>
+      <li>Напоминания за 5–120 минут до начала занятия</li>
+      <li>Включение и отключение оповещений</li>
+      <li>Клавиатура с кнопками и меню команд</li>
+    </ul>
+
+    <h2>Технологии</h2>
+    <ul>
+      <li><strong>Python 3</strong> — язык разработки</li>
+      <li><strong>python-telegram-bot</strong> — взаимодействие с Telegram Bot API (long polling)</li>
+      <li><strong>mospolytech_api</strong> — получение расписания</li>
+      <li><strong>SQLite</strong> — хранение настроек пользователей</li>
+      <li><strong>VPS</strong> — развёртывание бота (systemd)</li>
+    </ul>
+
+    <h2>Как работает бот</h2>
+    <p>
+      Цепочка работы: студент пишет боту → бот читает настройки из SQLite (группа, оповещения) →
+      запрашивает расписание у rasp.dmami.ru → формирует ответ и отправляет студенту в Telegram.
+      Расписание в базе не хранится. Фоновые напоминания (раз в минуту, по Москве) идут по той же
+      схеме: настройки из SQLite, расписание с API, сообщение студенту.
+    </p>
+
+    <figure class="figure">
+      <img src="images/architecture.svg" alt="Студент — бот — SQLite — API — бот — студент" width="860" height="150">
+      <figcaption>Студент → Бот ↔ SQLite → API → Бот → Студент</figcaption>
+    </figure>
+
+    <h2>Интерфейс бота</h2>
+    <p>Примеры работы PolyNotify в Telegram: настройки, справка, напоминания перед парами.</p>
+
+    <div class="screenshots">
+      <figure class="figure">
+        <img src="images/5255996199221796417.jpg" alt="Настройки группы и оповещений, справка по командам" loading="lazy">
+        <figcaption>Настройки, выбор группы и справка</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/5255996199221796416.jpg" alt="Напоминание за 30 минут до пары" loading="lazy">
+        <figcaption>Напоминание перед занятием</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/5255996199221796418.jpg" alt="История напоминаний в чате" loading="lazy">
+        <figcaption>Несколько напоминаний в чате</figcaption>
+      </figure>
+    </div>
+
+    <h2>Ограничения</h2>
+    <p>
+      Бот не отслеживает переносы и изменения расписания — только напоминания перед
+      занятиями по текущим данным API. Официальный сайт университета остаётся
+      основным источником при спорных случаях.
+    </p>
+  </main>
+
+  <footer>
+  Проектная (учебная) практика · Московский политех · 2026
+  </footer>
+</body>
+</html>

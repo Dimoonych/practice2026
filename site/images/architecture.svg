@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 150" width="860" height="150" role="img" aria-label="Студент — бот — SQLite — API — бот — студент">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#9aa5b5"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(110, 18)">
+    <!-- 1. Студент -->
+    <rect x="0" y="52" width="88" height="56" rx="8" fill="#1a2332" stroke="#3d8bfd" stroke-width="2"/>
+    <text x="44" y="78" text-anchor="middle" fill="#e8ecf1" font-family="Segoe UI, Arial, sans-serif" font-size="13">Студент</text>
+    <text x="44" y="94" text-anchor="middle" fill="#9aa5b5" font-family="Segoe UI, Arial, sans-serif" font-size="10">Telegram</text>
+
+    <line x1="88" y1="80" x2="132" y2="80" stroke="#9aa5b5" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="110" y="68" text-anchor="middle" fill="#9aa5b5" font-family="Segoe UI, Arial, sans-serif" font-size="8">запрос</text>
+
+    <!-- 2. Бот -->
+    <rect x="132" y="47" width="92" height="66" rx="8" fill="#1e3a5f" stroke="#3d8bfd" stroke-width="2"/>
+    <text x="178" y="78" text-anchor="middle" fill="#e8ecf1" font-family="Segoe UI, Arial, sans-serif" font-size="13">Бот</text>
+    <text x="178" y="94" text-anchor="middle" fill="#9aa5b5" font-family="Segoe UI, Arial, sans-serif" font-size="9">Python</text>
+
+    <!-- Бот ↔ SQLite -->
+    <line x1="178" y1="47" x2="178" y2="24" stroke="#9aa5b5" stroke-width="2" marker-end="url(#arr)"/>
+    <line x1="186" y1="24" x2="186" y2="47" stroke="#9aa5b5" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="118" y="0" width="120" height="24" rx="6" fill="#1a2332" stroke="#3d8bfd" stroke-width="2"/>
+    <text x="178" y="16" text-anchor="middle" fill="#e8ecf1" font-family="Segoe UI, Arial, sans-serif" font-size="11">SQLite (настройки)</text>
+
+    <line x1="224" y1="80" x2="268" y2="80" stroke="#9aa5b5" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="246" y="68" text-anchor="middle" fill="#9aa5b5" font-family="Segoe UI, Arial, sans-serif" font-size="8">API</text>
+
+    <!-- 3. rasp.dmami.ru -->
+    <rect x="268" y="52" width="124" height="56" rx="8" fill="#1a2332" stroke="#3d8bfd" stroke-width="2"/>
+    <text x="330" y="78" text-anchor="middle" fill="#e8ecf1" font-family="Segoe UI, Arial, sans-serif" font-size="12">rasp.dmami.ru</text>
+    <text x="330" y="94" text-anchor="middle" fill="#9aa5b5" font-family="Segoe UI, Arial, sans-serif" font-size="10">расписание</text>
+
+    <line x1="392" y1="80" x2="436" y2="80" stroke="#9aa5b5" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="414" y="68" text-anchor="middle" fill="#9aa5b5" font-family="Segoe UI, Arial, sans-serif" font-size="8">данные</text>
+
+    <!-- 4. Бот (ответ) -->
+    <rect x="436" y="47" width="92" height="66" rx="8" fill="#1e3a5f" stroke="#3d8bfd" stroke-width="2"/>
+    <text x="482" y="78" text-anchor="middle" fill="#e8ecf1" font-family="Segoe UI, Arial, sans-serif" font-size="13">Бот</text>
+    <text x="482" y="94" text-anchor="middle" fill="#9aa5b5" font-family="Segoe UI, Arial, sans-serif" font-size="9">ответ</text>
+
+    <line x1="528" y1="80" x2="580" y2="80" stroke="#9aa5b5" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="554" y="68" text-anchor="middle" fill="#9aa5b5" font-family="Segoe UI, Arial, sans-serif" font-size="8">сообщение</text>
+
+    <!-- 5. Студент -->
+    <rect x="580" y="52" width="88" height="56" rx="8" fill="#1a2332" stroke="#3d8bfd" stroke-width="2"/>
+    <text x="624" y="78" text-anchor="middle" fill="#e8ecf1" font-family="Segoe UI, Arial, sans-serif" font-size="13">Студент</text>
+    <text x="624" y="94" text-anchor="middle" fill="#9aa5b5" font-family="Segoe UI, Arial, sans-serif" font-size="10">Telegram</text>
+  </g>
+</svg>
