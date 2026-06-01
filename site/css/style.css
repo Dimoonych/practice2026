@@ -198,6 +198,13 @@ li {
   display: block;
 }
 
+.journal-section {
+  font-size: 1rem;
+  color: var(--accent);
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+}
+
 .journal-entry {
   background: var(--surface);
   border-left: 4px solid var(--accent);
@@ -234,6 +241,12 @@ li {
 
 .resource-list li {
   margin-bottom: 0.75rem;
+}
+
+.resource-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: -0.25rem 0 0.75rem;
 }
 
 .placeholder-img {
