@@ -37,7 +37,7 @@
 ├── docs/
 ├── reports/
 ├── site/
-├── src/          — Telegram-бот (проект ПД)
+├── src/          
 ├── task/
 └── .gitignore
 ```
