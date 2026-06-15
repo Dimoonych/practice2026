@@ -16,7 +16,7 @@ Telegram-бот для просмотра расписания Московск�
 
 ## Git
 
-`git clone`, `git add`, `git commit`, `git push`, ветки. В `.gitignore`: `.env`, `.venv`, `bot_data.db`, файлы IDE.
+`git clone`, `git add`, `git commit`, `git push`, ветки. В `.gitignore`: `.env`, `bot_data.db`, файлы IDE.
 
 ## Файлы
 
